@@ -45,7 +45,8 @@ let WebSocketTest (endpoint : WebSocketEndpoint<Server.S2CMessage, Server.C2SMes
                     | Message data ->
                         match data with
                         | Server.NewData x ->
-                            stream.Trigger(string x, float (x * x))
+                            stream.Trigger(string x, float x)
+                            writen "New data generated: %i" x
                             return (state + 1)
                         | Server.ErrorResponse x ->
                             writen "WebSocket connection error!"

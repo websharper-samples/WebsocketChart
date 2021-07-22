@@ -45,7 +45,7 @@ module Client =
     open WebSharper.UI.Client
 
     [<JavaScript>]
-    let data = [for x in 1.0 .. 20.0 -> (string x, x * x)]
+    let data = [for x in 1.0 .. 20.0 -> (string x, x)]
     [<JavaScript>]
     let dataStream = Event<string * float>()
     data
@@ -65,7 +65,7 @@ module Client =
             .Chart(div[
                 attr.id "myChart"
             ][
-                Renderers.ChartJs.Render(chart, Size = Size(500, 350))
+                Renderers.ChartJs.Render(chart, Size = Size(1000, 700))
             ])
             .Doc()
 

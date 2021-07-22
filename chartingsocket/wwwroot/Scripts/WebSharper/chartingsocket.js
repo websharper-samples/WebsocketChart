@@ -92,7 +92,13 @@
         }),Concurrency.Return(state)):(data=msg.$0,data.$==1?(writen(function($1)
         {
          return $1("WebSocket connection error!");
-        }),Concurrency.Return(state)):(x=data.$0,(stream.event.Trigger([Global.String(x),x*x]),Concurrency.Return(state+1))));
+        }),Concurrency.Return(state)):(x=data.$0,(stream.event.Trigger([Global.String(x),x]),(writen(function($1)
+        {
+         return function($2)
+         {
+          return $1("New data generated: "+Global.String($2));
+         };
+        }))(x),Concurrency.Return(state+1))));
        });
       };
      }]);
@@ -117,8 +123,8 @@
    $:1,
    $0:{
     $:0,
-    $0:500,
-    $1:350
+    $0:1000,
+    $1:700
    }
   },null,null)]),(_this=(W=Client.WebSocketTest(wsep,Client$1.dataStream()),(_this$1=new ProviderBuilder.New$1(),(_this$1.h.push({
    $:0,
@@ -152,7 +158,7 @@
   {
    return Seq.map(function(x)
    {
-    return[Global.String(x),x*x];
+    return[Global.String(x),x];
    },Operators.range(1,20));
   }));
   SC$1.dataStream=new FSharpEvent.New();

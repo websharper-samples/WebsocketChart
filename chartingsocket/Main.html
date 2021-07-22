@@ -17,6 +17,14 @@
         body {
             padding: 30px;
         }
+        
+        .row {
+            display: flex;
+        }
+        
+        .column {
+            flex: 50%;
+        }
     </style>
 </head>
 
@@ -25,8 +33,15 @@
         <h1>Live chart Sample</h1>
         <div id="tasks"></div>
         <div ws-hole="Main" ws-children-template="Body">
-            <div ws-replace="WebSocketTest"></div>
-            <div ws-replace="Chart"></div>
+            <div class="row">
+                <div class="column">
+                    <div ws-replace="Chart"></div>
+                    <a href="https://github.com/websharper-samples/WebsocketChart">Visit on GitHub</a>
+                </div>
+                <div class="column">
+                    <div ws-replace="WebSocketTest"></div>
+                </div>
+            </div>
         </div>
     </div>
     <script ws-replace="scripts"></script>
