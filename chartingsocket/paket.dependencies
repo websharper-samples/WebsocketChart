@@ -1,0 +1,12 @@
+source https://nuget.pkg.github.com/dotnet-websharper/index.json
+source https://api.nuget.org/v3/index.json
+
+storage: none
+
+nuget FSharp.Core ~> 4.3.4
+nuget WebSharper ~> 4.7 prerelease
+nuget WebSharper.AspNetCore ~> 4.7 prerelease
+nuget WebSharper.AspNetCore.WebSocket ~> 4.7 prerelease
+nuget WebSharper.FSharp ~> 4.7 prerelease
+nuget WebSharper.Charting ~> 4.7 prerelease
+nuget WebSharper.UI ~> 4.7 prerelease
