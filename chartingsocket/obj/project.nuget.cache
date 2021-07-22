@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8DcZtH0dQh+lySpzEL+DK1n7yOIwCewRBWdr1iPtm4IFCIipn6q8UMSpljPffdhbaIwcu/TU0smp+Wr6CYcMNQ==",
+  "dgSpecHash": "ojhm090fvOwjGfH71QOt3/ahbHuXTERftPbwJ+szstvOtnaEzin+5Klhu1tlvGamH/6BTcyMJrgwbXSbeyt2zA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\akos.steiner\\Desktop\\chartingsocket\\chartingsocket.fsproj",
+  "projectFilePath": "C:\\Users\\akos.steiner\\Desktop\\git\\WebsocketChart\\chartingsocket\\chartingsocket.fsproj",
   "expectedPackageFiles": [
     "C:\\Users\\akos.steiner\\.nuget\\packages\\fsharp.core\\4.3.4\\fsharp.core.4.3.4.nupkg.sha512",
     "C:\\Users\\akos.steiner\\.nuget\\packages\\htmlagilitypack\\1.11.34\\htmlagilitypack.1.11.34.nupkg.sha512",
@@ -20,7 +20,6 @@
     "C:\\Users\\akos.steiner\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.1\\microsoft.extensions.primitives.5.0.1.nupkg.sha512",
     "C:\\Users\\akos.steiner\\.nuget\\packages\\system.io.pipelines\\5.0.1\\system.io.pipelines.5.0.1.nupkg.sha512",
     "C:\\Users\\akos.steiner\\.nuget\\packages\\system.reflection.emit.lightweight\\4.7.0\\system.reflection.emit.lightweight.4.7.0.nupkg.sha512",
-    "C:\\Users\\akos.steiner\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
     "C:\\Users\\akos.steiner\\.nuget\\packages\\system.text.encodings.web\\5.0.1\\system.text.encodings.web.5.0.1.nupkg.sha512",
     "C:\\Users\\akos.steiner\\.nuget\\packages\\websharper\\4.7.3.446\\websharper.4.7.3.446.nupkg.sha512",
     "C:\\Users\\akos.steiner\\.nuget\\packages\\websharper.aspnetcore\\4.7.1.166\\websharper.aspnetcore.4.7.1.166.nupkg.sha512",

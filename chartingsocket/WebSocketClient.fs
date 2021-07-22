@@ -17,7 +17,7 @@
 // permissions and limitations under the License.
 //
 // $end{copyright}
-module WebSharper.AspNetCore.Tests.WebSocketClient
+module WebSocketChart.Client
 
 open WebSharper
 open WebSharper.JavaScript
@@ -26,8 +26,6 @@ open WebSharper.UI.Client
 open WebSharper.AspNetCore.WebSocket
 open WebSharper.AspNetCore.WebSocket.Client
 
-
-module Server = WebSocketServer
 
 [<JavaScript>]
 let WebSocketTest (endpoint : WebSocketEndpoint<Server.S2CMessage, Server.C2SMessage>) (stream: Event<string * float>) =

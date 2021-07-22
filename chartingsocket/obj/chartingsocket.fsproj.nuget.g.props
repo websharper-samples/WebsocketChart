@@ -7,10 +7,10 @@
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
     <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\akos.steiner\.nuget\packages\</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
-    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.7.0</NuGetToolVersion>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.10.0</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <SourceRoot Include="$([MSBuild]::EnsureTrailingSlash($(NuGetPackageFolders)))" />
+    <SourceRoot Include="C:\Users\akos.steiner\.nuget\packages\" />
   </ItemGroup>
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
@@ -26,7 +26,6 @@
     <PkgWebSharper_ChartJs Condition=" '$(PkgWebSharper_ChartJs)' == '' ">C:\Users\akos.steiner\.nuget\packages\websharper.chartjs\4.7.2.191</PkgWebSharper_ChartJs>
     <PkgWebSharper_Charting Condition=" '$(PkgWebSharper_Charting)' == '' ">C:\Users\akos.steiner\.nuget\packages\websharper.charting\4.7.1.284</PkgWebSharper_Charting>
     <PkgSystem_Text_Encodings_Web Condition=" '$(PkgSystem_Text_Encodings_Web)' == '' ">C:\Users\akos.steiner\.nuget\packages\system.text.encodings.web\5.0.1</PkgSystem_Text_Encodings_Web>
-    <PkgSystem_Runtime_CompilerServices_Unsafe Condition=" '$(PkgSystem_Runtime_CompilerServices_Unsafe)' == '' ">C:\Users\akos.steiner\.nuget\packages\system.runtime.compilerservices.unsafe\5.0.0</PkgSystem_Runtime_CompilerServices_Unsafe>
     <PkgSystem_IO_Pipelines Condition=" '$(PkgSystem_IO_Pipelines)' == '' ">C:\Users\akos.steiner\.nuget\packages\system.io.pipelines\5.0.1</PkgSystem_IO_Pipelines>
     <PkgMicrosoft_Extensions_Primitives Condition=" '$(PkgMicrosoft_Extensions_Primitives)' == '' ">C:\Users\akos.steiner\.nuget\packages\microsoft.extensions.primitives\5.0.1</PkgMicrosoft_Extensions_Primitives>
     <PkgMicrosoft_Extensions_DependencyInjection_Abstractions Condition=" '$(PkgMicrosoft_Extensions_DependencyInjection_Abstractions)' == '' ">C:\Users\akos.steiner\.nuget\packages\microsoft.extensions.dependencyinjection.abstractions\5.0.0</PkgMicrosoft_Extensions_DependencyInjection_Abstractions>

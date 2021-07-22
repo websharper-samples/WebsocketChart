@@ -33,7 +33,7 @@
     ".NETCoreApp,Version=v5.0": {
       "chartingsocket/1.0.0": {
         "dependencies": {
-          "FSharp.Core": "5.0.2",
+          "FSharp.Core": "4.3.4",
           "HtmlAgilityPack": "1.11.34",
           "Microsoft.AspNetCore.Authentication.Abstractions": "2.2.0",
           "Microsoft.AspNetCore.Hosting.Abstractions": "2.2.0",
@@ -47,22 +47,17 @@
           "Microsoft.Extensions.Logging.Abstractions": "5.0.0",
           "Microsoft.Extensions.Options": "5.0.0",
           "Microsoft.Extensions.Primitives": "5.0.1",
-          "Microsoft.NETCore.Platforms": "5.0.2",
-          "Microsoft.Win32.SystemEvents": "5.0.0",
-          "System.Configuration.ConfigurationManager": "5.0.0",
-          "System.Drawing.Common": "5.0.2",
           "System.IO.Pipelines": "5.0.1",
           "System.Reflection.Emit.Lightweight": "4.7.0",
-          "System.Security.AccessControl": "5.0.0",
-          "System.Security.Cryptography.ProtectedData": "5.0.0",
-          "System.Security.Permissions": "5.0.0",
-          "System.Security.Principal.Windows": "5.0.0",
           "System.Text.Encodings.Web": "5.0.1",
-          "System.Windows.Extensions": "5.0.0",
-          "WebSharper": "5.0.0.54-preview1",
-          "WebSharper.AspNetCore": "5.0.0.54-preview1",
-          "WebSharper.FSharp": "5.0.0.54-preview1",
-          "WebSharper.UI": "5.0.0.54-preview1",
+          "WebSharper": "4.7.3.446",
+          "WebSharper.AspNetCore": "4.7.1.166",
+          "WebSharper.AspNetCore.WebSocket": "4.7.1.166",
+          "WebSharper.ChartJs": "4.7.2.191",
+          "WebSharper.Charting": "4.7.1.284",
+          "WebSharper.FSharp": "4.7.3.446",
+          "WebSharper.Reactive": "4.7.2.180",
+          "WebSharper.UI": "4.7.2.243",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions.Reference": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "5.0.0.0",
@@ -294,7 +289,7 @@
           "System.Runtime.Serialization.Json": "5.0.0.0",
           "System.Runtime.Serialization.Primitives": "5.0.0.0",
           "System.Runtime.Serialization.Xml": "5.0.0.0",
-          "System.Security.AccessControl.Reference": "5.0.0.0",
+          "System.Security.AccessControl": "5.0.0.0",
           "System.Security.Claims": "5.0.0.0",
           "System.Security.Cryptography.Algorithms": "5.0.0.0",
           "System.Security.Cryptography.Cng": "5.0.0.0",
@@ -304,9 +299,9 @@
           "System.Security.Cryptography.X509Certificates": "5.0.0.0",
           "System.Security.Cryptography.Xml": "5.0.0.0",
           "System.Security": "4.0.0.0",
-          "System.Security.Permissions.Reference": "5.0.0.0",
+          "System.Security.Permissions": "5.0.0.0",
           "System.Security.Principal": "5.0.0.0",
-          "System.Security.Principal.Windows.Reference": "5.0.0.0",
+          "System.Security.Principal.Windows": "5.0.0.0",
           "System.Security.SecureString": "5.0.0.0",
           "System.ServiceModel.Web": "4.0.0.0",
           "System.ServiceProcess": "4.0.0.0",
@@ -331,7 +326,7 @@
           "System.Web": "4.0.0.0",
           "System.Web.HttpUtility": "5.0.0.0",
           "System.Windows": "4.0.0.0",
-          "System.Windows.Extensions.Reference": "5.0.0.0",
+          "System.Windows.Extensions": "5.0.0.0",
           "System.Xml": "4.0.0.0",
           "System.Xml.Linq": "4.0.0.0",
           "System.Xml.ReaderWriter": "5.0.0.0",
@@ -350,56 +345,59 @@
           "chartingsocket.dll": {}
         }
       },
-      "FSharp.Core/5.0.2": {
+      "FSharp.Core/4.3.4": {
         "runtime": {
-          "lib/netstandard2.0/FSharp.Core.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.221.30802"
+          "lib/netstandard1.6/FSharp.Core.dll": {
+            "assemblyVersion": "4.4.3.0",
+            "fileVersion": "2018.2.9.3"
           }
         },
         "resources": {
-          "lib/netstandard2.0/cs/FSharp.Core.resources.dll": {
+          "lib/netstandard1.6/cs/FSharp.Core.resources.dll": {
             "locale": "cs"
           },
-          "lib/netstandard2.0/de/FSharp.Core.resources.dll": {
+          "lib/netstandard1.6/de/FSharp.Core.resources.dll": {
             "locale": "de"
           },
-          "lib/netstandard2.0/es/FSharp.Core.resources.dll": {
+          "lib/netstandard1.6/en/FSharp.Core.resources.dll": {
+            "locale": "en"
+          },
+          "lib/netstandard1.6/es/FSharp.Core.resources.dll": {
             "locale": "es"
           },
-          "lib/netstandard2.0/fr/FSharp.Core.resources.dll": {
+          "lib/netstandard1.6/fr/FSharp.Core.resources.dll": {
             "locale": "fr"
           },
-          "lib/netstandard2.0/it/FSharp.Core.resources.dll": {
+          "lib/netstandard1.6/it/FSharp.Core.resources.dll": {
             "locale": "it"
           },
-          "lib/netstandard2.0/ja/FSharp.Core.resources.dll": {
+          "lib/netstandard1.6/ja/FSharp.Core.resources.dll": {
             "locale": "ja"
           },
-          "lib/netstandard2.0/ko/FSharp.Core.resources.dll": {
+          "lib/netstandard1.6/ko/FSharp.Core.resources.dll": {
             "locale": "ko"
           },
-          "lib/netstandard2.0/pl/FSharp.Core.resources.dll": {
+          "lib/netstandard1.6/pl/FSharp.Core.resources.dll": {
             "locale": "pl"
           },
-          "lib/netstandard2.0/pt-BR/FSharp.Core.resources.dll": {
+          "lib/netstandard1.6/pt-BR/FSharp.Core.resources.dll": {
             "locale": "pt-BR"
           },
-          "lib/netstandard2.0/ru/FSharp.Core.resources.dll": {
+          "lib/netstandard1.6/ru/FSharp.Core.resources.dll": {
             "locale": "ru"
           },
-          "lib/netstandard2.0/tr/FSharp.Core.resources.dll": {
+          "lib/netstandard1.6/tr/FSharp.Core.resources.dll": {
             "locale": "tr"
           },
-          "lib/netstandard2.0/zh-Hans/FSharp.Core.resources.dll": {
+          "lib/netstandard1.6/zh-Hans/FSharp.Core.resources.dll": {
             "locale": "zh-Hans"
           },
-          "lib/netstandard2.0/zh-Hant/FSharp.Core.resources.dll": {
+          "lib/netstandard1.6/zh-Hant/FSharp.Core.resources.dll": {
             "locale": "zh-Hant"
           }
         },
         "compile": {
-          "lib/netstandard2.0/FSharp.Core.dll": {}
+          "lib/netstandard1.6/FSharp.Core.dll": {}
         }
       },
       "HtmlAgilityPack/1.11.34": {
@@ -490,58 +488,6 @@
           "lib/netcoreapp3.0/Microsoft.Extensions.Primitives.dll": {}
         }
       },
-      "Microsoft.NETCore.Platforms/5.0.2": {},
-      "Microsoft.Win32.SystemEvents/5.0.0": {
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "5.0.2"
-        },
-        "compile": {
-          "ref/netstandard2.0/Microsoft.Win32.SystemEvents.dll": {}
-        }
-      },
-      "System.Configuration.ConfigurationManager/5.0.0": {
-        "dependencies": {
-          "System.Security.Cryptography.ProtectedData": "5.0.0",
-          "System.Security.Permissions": "5.0.0"
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.20.51904"
-          }
-        },
-        "compile": {
-          "ref/netstandard2.0/System.Configuration.ConfigurationManager.dll": {}
-        }
-      },
-      "System.Drawing.Common/5.0.2": {
-        "dependencies": {
-          "Microsoft.Win32.SystemEvents": "5.0.0"
-        },
-        "runtime": {
-          "lib/netcoreapp3.0/System.Drawing.Common.dll": {
-            "assemblyVersion": "5.0.0.2",
-            "fileVersion": "5.0.421.11614"
-          }
-        },
-        "runtimeTargets": {
-          "runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll": {
-            "rid": "unix",
-            "assetType": "runtime",
-            "assemblyVersion": "5.0.0.2",
-            "fileVersion": "5.0.421.11614"
-          },
-          "runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll": {
-            "rid": "win",
-            "assetType": "runtime",
-            "assemblyVersion": "5.0.0.2",
-            "fileVersion": "5.0.421.11614"
-          }
-        },
-        "compile": {
-          "ref/netcoreapp3.0/System.Drawing.Common.dll": {}
-        }
-      },
       "System.IO.Pipelines/5.0.1": {
         "runtime": {
           "lib/netcoreapp3.0/System.IO.Pipelines.dll": {
@@ -554,38 +500,6 @@
         }
       },
       "System.Reflection.Emit.Lightweight/4.7.0": {},
-      "System.Security.AccessControl/5.0.0": {
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "5.0.2",
-          "System.Security.Principal.Windows": "5.0.0"
-        }
-      },
-      "System.Security.Cryptography.ProtectedData/5.0.0": {
-        "runtime": {
-          "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.20.51904"
-          }
-        },
-        "runtimeTargets": {
-          "runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {
-            "rid": "win",
-            "assetType": "runtime",
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.20.51904"
-          }
-        },
-        "compile": {
-          "ref/netstandard2.0/System.Security.Cryptography.ProtectedData.dll": {}
-        }
-      },
-      "System.Security.Permissions/5.0.0": {
-        "dependencies": {
-          "System.Security.AccessControl": "5.0.0",
-          "System.Windows.Extensions": "5.0.0"
-        }
-      },
-      "System.Security.Principal.Windows/5.0.0": {},
       "System.Text.Encodings.Web/5.0.1": {
         "runtime": {
           "lib/netcoreapp3.0/System.Text.Encodings.Web.dll": {
@@ -597,57 +511,51 @@
           "lib/netcoreapp3.0/System.Text.Encodings.Web.dll": {}
         }
       },
-      "System.Windows.Extensions/5.0.0": {
+      "WebSharper/4.7.3.446": {
         "dependencies": {
-          "System.Drawing.Common": "5.0.2"
-        }
-      },
-      "WebSharper/5.0.0.54-preview1": {
-        "dependencies": {
-          "FSharp.Core": "5.0.2",
-          "System.Configuration.ConfigurationManager": "5.0.0",
+          "FSharp.Core": "4.3.4",
           "System.Reflection.Emit.Lightweight": "4.7.0"
         },
         "runtime": {
           "lib/netstandard2.0/WebSharper.Collections.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.0.54"
+            "assemblyVersion": "4.7.0.0",
+            "fileVersion": "4.7.3.446"
           },
           "lib/netstandard2.0/WebSharper.Control.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.0.54"
+            "assemblyVersion": "4.7.0.0",
+            "fileVersion": "4.7.3.446"
           },
           "lib/netstandard2.0/WebSharper.Core.JavaScript.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.0.54"
+            "assemblyVersion": "4.7.0.0",
+            "fileVersion": "4.7.3.446"
           },
           "lib/netstandard2.0/WebSharper.Core.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.0.54"
+            "assemblyVersion": "4.7.0.0",
+            "fileVersion": "4.7.3.446"
           },
           "lib/netstandard2.0/WebSharper.InterfaceGenerator.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.0.54"
+            "assemblyVersion": "4.7.0.0",
+            "fileVersion": "4.7.3.446"
           },
           "lib/netstandard2.0/WebSharper.JQuery.dll": {
-            "assemblyVersion": "5.0.0.0",
+            "assemblyVersion": "4.7.0.0",
             "fileVersion": "0.0.0.0"
           },
           "lib/netstandard2.0/WebSharper.JavaScript.dll": {
-            "assemblyVersion": "5.0.0.0",
+            "assemblyVersion": "4.7.0.0",
             "fileVersion": "0.0.0.0"
           },
           "lib/netstandard2.0/WebSharper.Main.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.0.54"
+            "assemblyVersion": "4.7.0.0",
+            "fileVersion": "4.7.3.446"
           },
           "lib/netstandard2.0/WebSharper.Sitelets.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.0.54"
+            "assemblyVersion": "4.7.0.0",
+            "fileVersion": "4.7.3.446"
           },
           "lib/netstandard2.0/WebSharper.Web.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.0.54"
+            "assemblyVersion": "4.7.0.0",
+            "fileVersion": "4.7.3.446"
           }
         },
         "compile": {
@@ -663,31 +571,93 @@
           "lib/netstandard2.0/WebSharper.Web.dll": {}
         }
       },
-      "WebSharper.AspNetCore/5.0.0.54-preview1": {
+      "WebSharper.AspNetCore/4.7.1.166": {
         "dependencies": {
+          "FSharp.Core": "4.3.4",
           "Microsoft.AspNetCore.Authentication.Abstractions": "2.2.0",
           "Microsoft.AspNetCore.Hosting.Abstractions": "2.2.0",
-          "WebSharper": "5.0.0.54-preview1"
+          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
+          "Microsoft.Extensions.Configuration.Abstractions": "5.0.0",
+          "WebSharper": "4.7.3.446"
         },
         "runtime": {
           "lib/netstandard2.0/WebSharper.AspNetCore.dll": {
-            "assemblyVersion": "5.0.0.0",
-            "fileVersion": "5.0.0.54"
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
           }
         },
         "compile": {
           "lib/netstandard2.0/WebSharper.AspNetCore.dll": {}
         }
       },
-      "WebSharper.FSharp/5.0.0.54-preview1": {
+      "WebSharper.AspNetCore.WebSocket/4.7.1.166": {
         "dependencies": {
-          "WebSharper": "5.0.0.54-preview1"
+          "WebSharper.AspNetCore": "4.7.1.166"
+        },
+        "runtime": {
+          "lib/netstandard2.0/WebSharper.AspNetCore.WebSocket.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/WebSharper.AspNetCore.WebSocket.dll": {}
         }
       },
-      "WebSharper.UI/5.0.0.54-preview1": {
+      "WebSharper.Charting/4.7.1.284": {
+        "dependencies": {
+          "WebSharper": "4.7.3.446",
+          "WebSharper.ChartJs": "4.7.2.191",
+          "WebSharper.Reactive": "4.7.2.180",
+          "WebSharper.UI": "4.7.2.243"
+        },
+        "runtime": {
+          "lib/netstandard2.0/WebSharper.Charting.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/WebSharper.Charting.dll": {}
+        }
+      },
+      "WebSharper.ChartJs/4.7.2.191": {
+        "dependencies": {
+          "WebSharper": "4.7.3.446"
+        },
+        "runtime": {
+          "lib/netstandard2.0/WebSharper.ChartJs.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/WebSharper.ChartJs.dll": {}
+        }
+      },
+      "WebSharper.FSharp/4.7.3.446": {
+        "dependencies": {
+          "WebSharper": "4.7.3.446"
+        }
+      },
+      "WebSharper.Reactive/4.7.2.180": {
+        "dependencies": {
+          "WebSharper": "4.7.3.446"
+        },
+        "runtime": {
+          "lib/netstandard2.0/IntelliFactory.Reactive.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/IntelliFactory.Reactive.dll": {}
+        }
+      },
+      "WebSharper.UI/4.7.2.243": {
         "dependencies": {
           "HtmlAgilityPack": "1.11.34",
-          "WebSharper": "5.0.0.54-preview1"
+          "WebSharper": "4.7.3.446"
         },
         "runtime": {
           "lib/netstandard2.0/WebSharper.UI.Templating.Common.dll": {
@@ -2100,7 +2070,7 @@
         },
         "compileOnly": true
       },
-      "System.Security.AccessControl.Reference/5.0.0.0": {
+      "System.Security.AccessControl/5.0.0.0": {
         "compile": {
           "System.Security.AccessControl.dll": {}
         },
@@ -2160,7 +2130,7 @@
         },
         "compileOnly": true
       },
-      "System.Security.Permissions.Reference/5.0.0.0": {
+      "System.Security.Permissions/5.0.0.0": {
         "compile": {
           "System.Security.Permissions.dll": {}
         },
@@ -2172,7 +2142,7 @@
         },
         "compileOnly": true
       },
-      "System.Security.Principal.Windows.Reference/5.0.0.0": {
+      "System.Security.Principal.Windows/5.0.0.0": {
         "compile": {
           "System.Security.Principal.Windows.dll": {}
         },
@@ -2322,7 +2292,7 @@
         },
         "compileOnly": true
       },
-      "System.Windows.Extensions.Reference/5.0.0.0": {
+      "System.Windows.Extensions/5.0.0.0": {
         "compile": {
           "System.Windows.Extensions.dll": {}
         },
@@ -2396,12 +2366,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "FSharp.Core/5.0.2": {
+    "FSharp.Core/4.3.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-DpcajqENgb3VXaHw1FKfVS+TWwEzck1PCajqLwBAVrtd1lfxd7T8JISVZBdV1mX9+2g48+tIgpNaVJWObdMrBw==",
-      "path": "fsharp.core/5.0.2",
-      "hashPath": "fsharp.core.5.0.2.nupkg.sha512"
+      "sha512": "sha512-u2UeaUl1pt/Lktdpzq3AsaRmOV1mOiQaSbZgYqQQYuqBSjnILWemetff4xMZIAZi0241jlIkcrJQsU5PlLwIJA==",
+      "path": "fsharp.core/4.3.4",
+      "hashPath": "fsharp.core.4.3.4.nupkg.sha512"
     },
     "HtmlAgilityPack/1.11.34": {
       "type": "package",
@@ -2494,34 +2464,6 @@
       "path": "microsoft.extensions.primitives/5.0.1",
       "hashPath": "microsoft.extensions.primitives.5.0.1.nupkg.sha512"
     },
-    "Microsoft.NETCore.Platforms/5.0.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-T8Lu7xWbcLFrficw7eOcX1NqDiIvqhyzJ7OA9KyZ/9hfU5zmYGddTyiD6HfYfYkjiPSeYgVsIZt1WxZ8YbI8Cw==",
-      "path": "microsoft.netcore.platforms/5.0.2",
-      "hashPath": "microsoft.netcore.platforms.5.0.2.nupkg.sha512"
-    },
-    "Microsoft.Win32.SystemEvents/5.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-Bh6blKG8VAKvXiLe2L+sEsn62nc1Ij34MrNxepD2OCrS5cpCwQa9MeLyhVQPQ/R4Wlzwuy6wMK8hLb11QPDRsQ==",
-      "path": "microsoft.win32.systemevents/5.0.0",
-      "hashPath": "microsoft.win32.systemevents.5.0.0.nupkg.sha512"
-    },
-    "System.Configuration.ConfigurationManager/5.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-aM7cbfEfVNlEEOj3DsZP+2g9NRwbkyiAv2isQEzw7pnkDg9ekCU2m1cdJLM02Uq691OaCS91tooaxcEn8d0q5w==",
-      "path": "system.configuration.configurationmanager/5.0.0",
-      "hashPath": "system.configuration.configurationmanager.5.0.0.nupkg.sha512"
-    },
-    "System.Drawing.Common/5.0.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-rvr/M1WPf24ljpvvrVd74+NdjRUJu1bBkspkZcnzSZnmAUQWSvanlQ0k/hVHk+cHufZbZfu7vOh/vYc0q5Uu/A==",
-      "path": "system.drawing.common/5.0.2",
-      "hashPath": "system.drawing.common.5.0.2.nupkg.sha512"
-    },
     "System.IO.Pipelines/5.0.1": {
       "type": "package",
       "serviceable": true,
@@ -2536,34 +2478,6 @@
       "path": "system.reflection.emit.lightweight/4.7.0",
       "hashPath": "system.reflection.emit.lightweight.4.7.0.nupkg.sha512"
     },
-    "System.Security.AccessControl/5.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-dagJ1mHZO3Ani8GH0PHpPEe/oYO+rVdbQjvjJkBRNQkX4t0r1iaeGn8+/ybkSLEan3/slM0t59SVdHzuHf2jmw==",
-      "path": "system.security.accesscontrol/5.0.0",
-      "hashPath": "system.security.accesscontrol.5.0.0.nupkg.sha512"
-    },
-    "System.Security.Cryptography.ProtectedData/5.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-HGxMSAFAPLNoxBvSfW08vHde0F9uh7BjASwu6JF9JnXuEPhCY3YUqURn0+bQV/4UWeaqymmrHWV+Aw9riQCtCA==",
-      "path": "system.security.cryptography.protecteddata/5.0.0",
-      "hashPath": "system.security.cryptography.protecteddata.5.0.0.nupkg.sha512"
-    },
-    "System.Security.Permissions/5.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-uE8juAhEkp7KDBCdjDIE3H9R1HJuEHqeqX8nLX9gmYKWwsqk3T5qZlPx8qle5DPKimC/Fy3AFTdV7HamgCh9qQ==",
-      "path": "system.security.permissions/5.0.0",
-      "hashPath": "system.security.permissions.5.0.0.nupkg.sha512"
-    },
-    "System.Security.Principal.Windows/5.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-t0MGLukB5WAVU9bO3MGzvlGnyJPgUlcwerXn1kzBRjwLKixT96XV0Uza41W49gVd8zEMFu9vQEFlv0IOrytICA==",
-      "path": "system.security.principal.windows/5.0.0",
-      "hashPath": "system.security.principal.windows.5.0.0.nupkg.sha512"
-    },
     "System.Text.Encodings.Web/5.0.1": {
       "type": "package",
       "serviceable": true,
@@ -2571,40 +2485,61 @@
       "path": "system.text.encodings.web/5.0.1",
       "hashPath": "system.text.encodings.web.5.0.1.nupkg.sha512"
     },
-    "System.Windows.Extensions/5.0.0": {
+    "WebSharper/4.7.3.446": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-c1ho9WU9ZxMZawML+ssPKZfdnrg/OjR3pe0m9v8230z3acqphwvPJqzAkH54xRYm5ntZHGG1EPP3sux9H3qSPg==",
-      "path": "system.windows.extensions/5.0.0",
-      "hashPath": "system.windows.extensions.5.0.0.nupkg.sha512"
+      "sha512": "sha512-dQ2G2TYlZBrFj14beP9jjEX8RIwHPlzo+iH853lQO7AtX6Mawxa6dOva8/ZS3O3Iy2vR4uRGl4TrfgkxTCFCLg==",
+      "path": "websharper/4.7.3.446",
+      "hashPath": "websharper.4.7.3.446.nupkg.sha512"
     },
-    "WebSharper/5.0.0.54-preview1": {
+    "WebSharper.AspNetCore/4.7.1.166": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-hiCT9VmkyABSg2MJFPjO7JbRsU9Prbd8tyKRB94CSBSltPvjnkkb2iNj7B7nJHCdqOMgfCwHCBQTgOlqx/5DdQ==",
-      "path": "websharper/5.0.0.54-preview1",
-      "hashPath": "websharper.5.0.0.54-preview1.nupkg.sha512"
+      "sha512": "sha512-BC/OC1MFZ+rzW6F5+o4RZs1CQvgiEWnFlun06rhwUXCz+gFT7FOCYH9IUK9LU/2Li2nsBVxG7lM/PVPs6OJ2dg==",
+      "path": "websharper.aspnetcore/4.7.1.166",
+      "hashPath": "websharper.aspnetcore.4.7.1.166.nupkg.sha512"
     },
-    "WebSharper.AspNetCore/5.0.0.54-preview1": {
+    "WebSharper.AspNetCore.WebSocket/4.7.1.166": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-+jEdW2s15BgNyoIcaK38nwYTyc54kk2ld1bVJXQ8xbv36ZIovTbPENwXQvCgzNkMZfHKCmEFRyfJ6PYoZs6GRw==",
-      "path": "websharper.aspnetcore/5.0.0.54-preview1",
-      "hashPath": "websharper.aspnetcore.5.0.0.54-preview1.nupkg.sha512"
+      "sha512": "sha512-YCOc9vIWK5bRHaVeruxYle0zkw42gIa8cBkLkNz0oTMS1mXd36eS6OjhDf3LSdsA6OTxN3rINDJD0jnNKYkYsg==",
+      "path": "websharper.aspnetcore.websocket/4.7.1.166",
+      "hashPath": "websharper.aspnetcore.websocket.4.7.1.166.nupkg.sha512"
     },
-    "WebSharper.FSharp/5.0.0.54-preview1": {
+    "WebSharper.Charting/4.7.1.284": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-WKrscZfMPdhxE9lWBPMIF2EgMYD+su3je+CUCeWg6xlAuZmPE9b+wi3liJcOfomzaMGsZScVkm31urGGtFOB+w==",
-      "path": "websharper.fsharp/5.0.0.54-preview1",
-      "hashPath": "websharper.fsharp.5.0.0.54-preview1.nupkg.sha512"
+      "sha512": "sha512-CcMiQMo3KoAttNvUloQbH5oF3eQT34HjClwK4IIcXDvuueJr/laDc60Tjsysvu30k3N/+KW3KMS5GrrpOV5m5g==",
+      "path": "websharper.charting/4.7.1.284",
+      "hashPath": "websharper.charting.4.7.1.284.nupkg.sha512"
     },
-    "WebSharper.UI/5.0.0.54-preview1": {
+    "WebSharper.ChartJs/4.7.2.191": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-lX+tr6iMzAEMNDG+siOq8krKiS64Zd0gXupZ1+4blI0li/mZFeJA8xD72f6yCjNutrSmQwenMLdbkYZ04q2EJw==",
-      "path": "websharper.ui/5.0.0.54-preview1",
-      "hashPath": "websharper.ui.5.0.0.54-preview1.nupkg.sha512"
+      "sha512": "sha512-XJx0uFGFuxjEx1vUF0nFlFau3FCOQFXOe21O81/9+7E2/rhZu6+JhOKzTr/TGqsu00PgjcTycK4PE/UTufx5Og==",
+      "path": "websharper.chartjs/4.7.2.191",
+      "hashPath": "websharper.chartjs.4.7.2.191.nupkg.sha512"
+    },
+    "WebSharper.FSharp/4.7.3.446": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Nsbvrnhm1ZvbToY/xZCG68aMkU5O/zqB/rTmvSRu6XoaLeZu7RfEvZrNs5tnpFru28UTkUPpH+Y9JFEU2oR/6w==",
+      "path": "websharper.fsharp/4.7.3.446",
+      "hashPath": "websharper.fsharp.4.7.3.446.nupkg.sha512"
+    },
+    "WebSharper.Reactive/4.7.2.180": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OOZe1JJhFqVpAX9vcxQwmBpp7urrfTv0BGsgAkuNPviSHuYphGlqUdBhRc9zm62GWIpIJQJ646CnxSxCoFBLHg==",
+      "path": "websharper.reactive/4.7.2.180",
+      "hashPath": "websharper.reactive.4.7.2.180.nupkg.sha512"
+    },
+    "WebSharper.UI/4.7.2.243": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1ye7HbL1BNywhbFzii17SQuc4uzp02ZWQcF+FtXFXF3YWNhGSdtwqh8jYTZvH8k3CpxSA29CTh+Hg75ITaqcgQ==",
+      "path": "websharper.ui/4.7.2.243",
+      "hashPath": "websharper.ui.4.7.2.243.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Antiforgery/5.0.0.0": {
       "type": "referenceassembly",
@@ -3761,7 +3696,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "System.Security.AccessControl.Reference/5.0.0.0": {
+    "System.Security.AccessControl/5.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -3811,7 +3746,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "System.Security.Permissions.Reference/5.0.0.0": {
+    "System.Security.Permissions/5.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -3821,7 +3756,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "System.Security.Principal.Windows.Reference/5.0.0.0": {
+    "System.Security.Principal.Windows/5.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -3946,7 +3881,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "System.Windows.Extensions.Reference/5.0.0.0": {
+    "System.Windows.Extensions/5.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""

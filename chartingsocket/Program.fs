@@ -17,7 +17,7 @@
 // permissions and limitations under the License.
 //
 // $end{copyright}
-namespace WebSharper.AspNetCore.Tests
+namespace WebSocketChart
 
 open System
 open System.Collections.Generic

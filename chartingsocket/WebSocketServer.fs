@@ -17,13 +17,14 @@
 // permissions and limitations under the License.
 //
 // $end{copyright}
-module WebSharper.AspNetCore.Tests.WebSocketServer
+module WebSocketChart.Server
 
 open WebSharper
 open WebSharper.AspNetCore.WebSocket.Server
 
 type [<JavaScript; NamedUnionCases>]
-    C2SMessage = string
+    C2SMessage =
+    | Request of str: string
 
 and [<JavaScript; NamedUnionCases "type">]
     S2CMessage =

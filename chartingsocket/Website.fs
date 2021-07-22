@@ -17,7 +17,7 @@
 // permissions and limitations under the License.
 //
 // $end{copyright}
-module WebSharper.AspNetCore.Tests.Website
+module WebSocketChart.Website
 
 open Microsoft.Extensions.Logging
 open WebSharper
@@ -31,15 +31,6 @@ open WebSharper.Charting
 
 type IndexTemplate = Template<"Main.html", clientLoad = ClientLoad.FromDocument>
 
-[<AbstractClass>]
-type RpcUserSession() =
-    [<Rpc>]
-    abstract GetLogin : unit -> Async<option<string>>
-    [<Rpc>]
-    abstract Login : name: string -> Async<unit>
-    [<Rpc>]
-    abstract Logout : unit -> Async<unit>
-
 type EndPoint =
     | [<EndPoint "/">] Home
     | [<EndPoint "/about">] About
@@ -49,18 +40,17 @@ type EndPoint =
 [<JavaScript>]
 type SomeRecord = { Name : string }
 
-[<Rpc>] 
-let DoSomething () = async { return { Name = "Yo." } }
-
 [<JavaScript>]
-[<Require(typeof<Resources.BaseResource>, "//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css")>]
 module Client =
     open WebSharper.UI.Client
 
+    [<JavaScript>]
     let data = [for x in 1.0 .. 20.0 -> (string x, x * x)]
+    [<JavaScript>]
     let dataStream = Event<string * float>()
     data
     |> List.iter dataStream.Trigger
+    [<JavaScript>]
     let chart =
         LiveChart.Line(dataStream.Publish)
             .WithTitle("LiveChart example")
@@ -68,9 +58,10 @@ module Client =
             .WithPointColor(Color.Rgba(255, 61, 0, 1.0))
             .WithStrokeColor(Color.Rgba(255, 114, 0, 0.8))
 
-    let Main (aboutPageLink: string) wsep =
+    [<JavaScript>]
+    let Main wsep =
         IndexTemplate.Body()
-            .WebSocketTest(WebSocketClient.WebSocketTest wsep dataStream)
+            .WebSocketTest(WebSocketChart.Client.WebSocketTest wsep dataStream)
             .Chart(div[
                 attr.id "myChart"
             ][
@@ -103,10 +94,9 @@ type MyWebsite(logger: ILogger<MyWebsite>) =
         logger.LogInformation("Serving {0}", ep)
         match ep with
         | Home ->
-            let aboutPageLink = ctx.Link About
-            let wsep = WebSocketClient.MyEndPoint (ctx.RequestUri.ToString())
+            let wsep = WebSocketChart.Client.MyEndPoint (ctx.RequestUri.ToString())
             IndexTemplate()
-                .Main(client <@ Client.Main aboutPageLink wsep @>)
+                .Main(client <@ Client.Main wsep @>)
                 .Doc()
             |> Content.Page
         | About ->

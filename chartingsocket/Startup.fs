@@ -1,4 +1,4 @@
-namespace chartingsocket
+namespace WebSocketChart
 
 
 open System
@@ -28,7 +28,7 @@ type Startup() =
             .UseWebSockets()
             .UseWebSharper(fun ws ->
                 ws.UseWebSocket("ws", fun wsws -> 
-                    wsws.Use(WebSocketServer.Start())
+                    wsws.Use(WebSocketChart.Server.Start())
                         .JsonEncoding(JsonEncoding.Readable)
                     |> ignore
                 )
