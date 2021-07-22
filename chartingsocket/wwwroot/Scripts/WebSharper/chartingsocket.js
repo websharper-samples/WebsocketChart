@@ -1,16 +1,16 @@
 (function(Global)
 {
  "use strict";
- var WebSocketChart,Client,Website,SomeRecord,Client$1,SC$1,chartingsocket_JsonDecoder,chartingsocket_JsonEncoder,chartingsocket_Templates,WebSharper,UI,Doc,Concurrency,AspNetCore,WebSocket,Client$2,WithEncoding,JSON,AttrProxy,Charting,Renderers,ChartJs,Templating,Runtime,Server,ProviderBuilder,Handler,TemplateInstance,List,Seq,Operators,Control,FSharpEvent,LiveChart,Pervasives,ClientSideJson,Provider,Client$3,Templates;
+ var WebSocketChart,Client,Website,SomeRecord,Client$1,SC$1,chartingsocket_JsonEncoder,chartingsocket_Templates,chartingsocket_JsonDecoder,WebSharper,UI,Doc,Concurrency,AspNetCore,WebSocket,Client$2,WithEncoding,JSON,AttrProxy,Charting,Renderers,ChartJs,Templating,Runtime,Server,ProviderBuilder,Handler,TemplateInstance,Control,FSharpEvent,LiveChart,Pervasives,ClientSideJson,Provider,Client$3,Templates;
  WebSocketChart=Global.WebSocketChart=Global.WebSocketChart||{};
  Client=WebSocketChart.Client=WebSocketChart.Client||{};
  Website=WebSocketChart.Website=WebSocketChart.Website||{};
  SomeRecord=Website.SomeRecord=Website.SomeRecord||{};
  Client$1=Website.Client=Website.Client||{};
  SC$1=Global.StartupCode$chartingsocket$Website=Global.StartupCode$chartingsocket$Website||{};
- chartingsocket_JsonDecoder=Global.chartingsocket_JsonDecoder=Global.chartingsocket_JsonDecoder||{};
  chartingsocket_JsonEncoder=Global.chartingsocket_JsonEncoder=Global.chartingsocket_JsonEncoder||{};
  chartingsocket_Templates=Global.chartingsocket_Templates=Global.chartingsocket_Templates||{};
+ chartingsocket_JsonDecoder=Global.chartingsocket_JsonDecoder=Global.chartingsocket_JsonDecoder||{};
  WebSharper=Global.WebSharper;
  UI=WebSharper&&WebSharper.UI;
  Doc=UI&&UI.Doc;
@@ -30,9 +30,6 @@
  ProviderBuilder=Server&&Server.ProviderBuilder;
  Handler=Server&&Server.Handler;
  TemplateInstance=Server&&Server.TemplateInstance;
- List=WebSharper&&WebSharper.List;
- Seq=WebSharper&&WebSharper.Seq;
- Operators=WebSharper&&WebSharper.Operators;
  Control=WebSharper&&WebSharper.Control;
  FSharpEvent=Control&&Control.FSharpEvent;
  LiveChart=Charting&&Charting.LiveChart;
@@ -92,7 +89,7 @@
         }),Concurrency.Return(state)):(data=msg.$0,data.$==1?(writen(function($1)
         {
          return $1("WebSocket connection error!");
-        }),Concurrency.Return(state)):(x=data.$0,(stream.event.Trigger([Global.String(x),x]),(writen(function($1)
+        }),Concurrency.Return(state)):(x=data.$0,(stream.event.Trigger([Global.String(state),x]),(writen(function($1)
         {
          return function($2)
          {
@@ -126,7 +123,10 @@
     $0:1000,
     $1:700
    }
-  },null,null)]),(_this=(W=Client.WebSocketTest(wsep,Client$1.dataStream()),(_this$1=new ProviderBuilder.New$1(),(_this$1.h.push({
+  },null,{
+   $:1,
+   $0:50
+  })]),(_this=(W=Client.WebSocketTest(wsep,Client$1.dataStream()),(_this$1=new ProviderBuilder.New$1(),(_this$1.h.push({
    $:0,
    $0:"websockettest",
    $1:W
@@ -146,27 +146,11 @@
   SC$1.$cctor();
   return SC$1.dataStream;
  };
- Client$1.data=function()
- {
-  SC$1.$cctor();
-  return SC$1.data;
- };
  SC$1.$cctor=function()
  {
   SC$1.$cctor=Global.ignore;
-  SC$1.data=List.ofSeq(Seq.delay(function()
-  {
-   return Seq.map(function(x)
-   {
-    return[Global.String(x),x];
-   },Operators.range(1,20));
-  }));
   SC$1.dataStream=new FSharpEvent.New();
-  List.iter(function(a)
-  {
-   Client$1.dataStream().event.Trigger(a);
-  },Client$1.data());
-  SC$1.chart=LiveChart.Line$1(Client$1.dataStream().event).__WithTitle("LiveChart example").__WithFillColor(new Pervasives.Color({
+  SC$1.chart=LiveChart.Line$1(Client$1.dataStream().event).__WithTitle("Generated data").__WithFillColor(new Pervasives.Color({
    $:0,
    $0:255,
    $1:183,
@@ -186,10 +170,6 @@
    $3:0.8
   }));
  };
- chartingsocket_JsonDecoder.j=function()
- {
-  return chartingsocket_JsonDecoder._v?chartingsocket_JsonDecoder._v:chartingsocket_JsonDecoder._v=(Provider.DecodeUnion(void 0,"type",[["int",[["$0","value",Provider.Id(),0]]],["string",[["$0","value",Provider.Id(),0]]]]))();
- };
  chartingsocket_JsonEncoder.j=function()
  {
   return chartingsocket_JsonEncoder._v?chartingsocket_JsonEncoder._v:chartingsocket_JsonEncoder._v=(Provider.EncodeUnion(void 0,{
@@ -203,5 +183,9 @@
    $:1,
    $0:"body"
   },h):void 0;
+ };
+ chartingsocket_JsonDecoder.j=function()
+ {
+  return chartingsocket_JsonDecoder._v?chartingsocket_JsonDecoder._v:chartingsocket_JsonDecoder._v=(Provider.DecodeUnion(void 0,"type",[["int",[["$0","value",Provider.Id(),0]]],["string",[["$0","value",Provider.Id(),0]]]]))();
  };
 }(self));

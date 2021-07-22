@@ -26,7 +26,6 @@ open WebSharper.UI.Client
 open WebSharper.AspNetCore.WebSocket
 open WebSharper.AspNetCore.WebSocket.Client
 
-
 [<JavaScript>]
 let WebSocketTest (endpoint : WebSocketEndpoint<Server.S2CMessage, Server.C2SMessage>) (stream: Event<string * float>) =
     let container = Elt.pre [] []
@@ -45,7 +44,7 @@ let WebSocketTest (endpoint : WebSocketEndpoint<Server.S2CMessage, Server.C2SMes
                     | Message data ->
                         match data with
                         | Server.NewData x ->
-                            stream.Trigger(string x, float x)
+                            stream.Trigger(string state, float x)
                             writen "New data generated: %i" x
                             return (state + 1)
                         | Server.ErrorResponse x ->

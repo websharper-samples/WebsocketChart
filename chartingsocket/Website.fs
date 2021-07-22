@@ -44,28 +44,21 @@ type SomeRecord = { Name : string }
 module Client =
     open WebSharper.UI.Client
 
-    [<JavaScript>]
-    let data = [for x in 1.0 .. 20.0 -> (string x, x)]
-    [<JavaScript>]
     let dataStream = Event<string * float>()
-    data
-    |> List.iter dataStream.Trigger
-    [<JavaScript>]
     let chart =
         LiveChart.Line(dataStream.Publish)
-            .WithTitle("LiveChart example")
+            .WithTitle("Generated data")
             .WithFillColor(Color.Rgba(255, 183, 100, 0.4))
             .WithPointColor(Color.Rgba(255, 61, 0, 1.0))
             .WithStrokeColor(Color.Rgba(255, 114, 0, 0.8))
 
-    [<JavaScript>]
     let Main wsep =
         IndexTemplate.Body()
             .WebSocketTest(WebSocketChart.Client.WebSocketTest wsep dataStream)
             .Chart(div[
                 attr.id "myChart"
             ][
-                Renderers.ChartJs.Render(chart, Size = Size(1000, 700))
+                Renderers.ChartJs.Render(chart, Size = Size(1000, 700), Window = 50)
             ])
             .Doc()
 
