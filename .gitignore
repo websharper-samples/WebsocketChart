@@ -1,2 +1,4 @@
 /chartingsocket/bin
 /chartingsocket/obj
+/chartingsocket/wwwroot/Scripts
+/chartingsocket/paket-files
