@@ -87,7 +87,7 @@ type MyWebsite(logger: ILogger<MyWebsite>) =
         logger.LogInformation("Serving {0}", ep)
         match ep with
         | Home ->
-            let wsep = WebSocketChart.Client.MyEndPoint (ctx.RequestUri.ToString())
+            let wsep = Client.MyEndPoint (ctx.RequestUri.ToString())
             IndexTemplate()
                 .Main(client <@ Client.Main wsep @>)
                 .Doc()
