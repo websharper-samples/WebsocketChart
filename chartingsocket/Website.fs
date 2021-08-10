@@ -34,11 +34,6 @@ type IndexTemplate = Template<"Main.html", clientLoad = ClientLoad.FromDocument>
 type EndPoint =
     | [<EndPoint "/">] Home
     | [<EndPoint "/about">] About
-    | [<EndPoint "POST /post">] Post
-    | [<EndPoint "POST /formdata"; FormData "x">] FormData of x: string 
-
-[<JavaScript>]
-type SomeRecord = { Name : string }
 
 [<JavaScript>]
 module Client =
@@ -93,9 +88,6 @@ type MyWebsite(logger: ILogger<MyWebsite>) =
                 .Doc()
             |> Content.Page
         | About ->
-            Content.Text "This is a test project for WebSharper.AspNetCore"
-        | FormData i ->
-            Content.Text i
-        | Post ->
-            Content.Text ctx.Request.BodyText
+            Content.Text "Through this WebSharper application you can experience how the client and the webserver communicates with each other using websocket protocoll.
+When running the app you will see a line-chart that recieves new data from the server. This data is also logged on the left side (and are randomly generated). Read more about this project on https://github.com/websharper-samples/WebsocketChart"
     )
