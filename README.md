@@ -8,7 +8,7 @@ ___
 
 For deploying the application to see it running in the browser just click the button below.
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)]()
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://azuredeploy.net/repository=https://github.com/websharper-samples/WebsocketChart)
 
 Or follow the instructions below after cloning this repository: 
 
