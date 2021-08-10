@@ -5,7 +5,9 @@ When running the app you will see a line-chart that recieves new data from the s
 After 50 generated data the chart starts shifting to avoid overloading.
 ___
 # Running the appliaction
-After navigate to the `chartingsocket` folder you have to build the project with
+
+To see the running application in browser [click here]() or follow the instructions below after cloning this repository:
+Navigate to the `chartingsocket` folder and build the project with
 ```
 dotnet build
 ```
@@ -132,4 +134,5 @@ The relevant section here is the following:
 We trigger the stream with the new data (**x**), that has been sent as a message from the server. `State` is a counter for the data amount. 
 After updating the chart we are just simply logging the new data to the left side of the application. The `writen` method takes care of it in the code above.
 ___
-If you have any questions about this project, just write an [issue](https://github.com/websharper-samples/WebsocketChart/issues) or contact the [author](https://github.com/steiner2001). **Happy coding!**
+## If you have any questions about this project, just write an [issue](https://github.com/websharper-samples/WebsocketChart/issues) or contact the [author](https://github.com/steiner2001). **Happy coding!**
+___
