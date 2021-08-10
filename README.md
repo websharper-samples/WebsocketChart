@@ -1,13 +1,10 @@
-# websocket sample
-## About
-___
+# About
 Through this WebSharper application you can experience how the client and the webserver communicates with each other using websocket protocoll.
 When running the app you will see a line-chart that recieves new data from the server. This data is also logged on the left side (and are randomly generated).
 ![screenshot](/chartingsocket/media/screenshot.png)
 After 50 generated data the chart starts shifting to avoid overloading.
 ___
-## Running the appliaction
-___
+# Running the appliaction
 After navigate to the `chartingsocket` folder you have to build the project with
 ```
 dotnet build
@@ -24,7 +21,6 @@ Now you can `Ctrl+LeftClick` on the URL or write it into the browser manually. T
 ___
 # The Client-Server communication
 ## Creating the chart
-___
 As I mentioned above, the server sends data to a chart implemented in the program. For this communication firstly, we have to create a chart. In this sample project we are using **ChartJS** for charting. [More about chartJS.](https://www.chartjs.org/docs/3.4.1/)
 
 About using **chartJS** in F# with **WebSharper** you can read [here](https://github.com/dotnet-websharper/chartjs).
@@ -74,7 +70,6 @@ After that we can refere to it and replace it in `Website.fs` according to the n
 This is how we replace a **DOM element** in our html. After `.Chart` (the name of the ws attribute) we declare the tag of the new DOM element. In the first square bracket we can add attributes to the element as `style`, `class` or `id` as well. In the second bracket we can tell the program what to display. For displaying a chart we need to call the `Renderers.ChartJs.Render` method with the chart as a parameter. We can define its size and other parameters too, like below.
 ___
 ## Solving the communication
-___
 When we are done with the chart we can start working on the communication. For this task we have to write code mainly in `WebSocketClient.fs` and `WebSocketServer.fs`.
 ### Server-side
 Since we need to send the new data from the server, start with **server-side**.
