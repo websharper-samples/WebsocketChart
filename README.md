@@ -6,7 +6,12 @@ After 50 generated data the chart starts shifting to avoid overloading.
 ___
 # Running the appliaction
 
-To see the running application in browser [click here]() or follow the instructions below after cloning this repository:
+For deploying the application to see it running in the browser just click the button below.
+
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)]()
+
+Or follow the instructions below after cloning this repository: 
+
 Navigate to the `chartingsocket` folder and build the project with
 ```
 dotnet build
