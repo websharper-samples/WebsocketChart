@@ -5,3 +5,4 @@ WebSharper.AspNetCore
 WebSharper.AspNetCore.WebSocket
 WebSharper.Charting
 FSharp.Core
+WebSharper.ChartJS

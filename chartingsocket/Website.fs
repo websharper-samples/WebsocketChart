@@ -28,6 +28,7 @@ open WebSharper.UI
 open WebSharper.UI.Html
 open WebSharper.UI.Templating
 open WebSharper.Charting
+open type WebSharper.UI.ClientServer
 
 type IndexTemplate = Template<"Main.html", clientLoad = ClientLoad.FromDocument>
 
@@ -50,11 +51,13 @@ module Client =
     let Main wsep =
         IndexTemplate.Body()
             .WebSocketTest(WebSocketChart.Client.WebSocketTest wsep dataStream)
-            .Chart(div[
-                attr.id "myChart"
-            ][
-                Renderers.ChartJs.Render(chart, Size = Size(1000, 700), Window = 50)
-            ])
+            .Chart(
+                div [
+                    attr.id "myChart"
+                ] [
+                    Renderers.ChartJs.Render(chart, Size = Size(1000, 700), Window = 50)
+                ]
+            )
             .Doc()
 
 open WebSharper.UI.Server
@@ -84,7 +87,7 @@ type MyWebsite(logger: ILogger<MyWebsite>) =
         | Home ->
             let wsep = Client.MyEndPoint (ctx.RequestUri.ToString())
             IndexTemplate()
-                .Main(client <@ Client.Main wsep @>)
+                .Main(client (Client.Main wsep))
                 .Doc()
             |> Content.Page
         | About ->
