@@ -3,4 +3,6 @@
 /chartingsocket/wwwroot/Scripts
 /chartingsocket/paket-files
 
-*/.vs/
+.vs/
+node_modules/
+build/

@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "esbuild": "^0.19.9"
+  },
+  "dependencies": {
+    "chart.js": "^4.5.0"
+  }
+}

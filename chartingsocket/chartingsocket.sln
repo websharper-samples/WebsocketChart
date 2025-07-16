@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36212.18 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "chartingsocket", "chartingsocket.fsproj", "{2B1E3838-C135-F1F0-AF1B-E963687C2E39}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2B1E3838-C135-F1F0-AF1B-E963687C2E39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B1E3838-C135-F1F0-AF1B-E963687C2E39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B1E3838-C135-F1F0-AF1B-E963687C2E39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B1E3838-C135-F1F0-AF1B-E963687C2E39}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5A1FD628-9BC3-44D2-B721-8CBD65640275}
+	EndGlobalSection
+EndGlobal

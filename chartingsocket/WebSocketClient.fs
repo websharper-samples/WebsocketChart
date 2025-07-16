@@ -69,4 +69,4 @@ let WebSocketTest (endpoint : WebSocketEndpoint<Server.S2CMessage, Server.C2SMes
     container
 
 let MyEndPoint (url: string) : WebSocketEndpoint<Server.S2CMessage, Server.C2SMessage> = 
-    WebSocketEndpoint.Create(url, "/ws", JsonEncoding.Readable)
+    WebSocketEndpoint.Create(url, "/ws")

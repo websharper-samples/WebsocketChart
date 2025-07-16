@@ -16,7 +16,7 @@ open WebSharper.AspNetCore.WebSocket
 type Startup() =
 
     member this.ConfigureServices(services: IServiceCollection) =
-        services.AddSitelet<Website.MyWebsite>()
+        services.AddWebSharper()
                 .AddAuthentication("WebSharper")
                 .AddCookie("WebSharper", fun options -> ())
         |> ignore
@@ -27,9 +27,11 @@ type Startup() =
         app.UseAuthentication()
             .UseWebSockets()
             .UseWebSharper(fun ws ->
-                ws.UseWebSocket("ws", fun wsws -> 
+                let logger = app.ApplicationServices.GetService<ILogger<Website.MyWebsite>>()
+                ws
+                    .Sitelet(Website.MyWebsite(logger).Sitelet)
+                    .UseWebSocket("ws", fun wsws -> 
                     wsws.Use(WebSocketChart.Server.Start())
-                        .JsonEncoding(JsonEncoding.Readable)
                     |> ignore
                 )
                 |> ignore
